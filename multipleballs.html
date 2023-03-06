@@ -1,0 +1,297 @@
+<div id="ball1" style="
+z-index:5;
+position:absolute;
+left: 0px;
+top: 0px;
+width: 50px;
+height:50px;
+border-radius:0%;
+background:blue"></div>
+
+<script>
+var velocityX1 = 0;
+var velocityY1 = 10;
+var positionX1 = 1475;
+var positionY1 = 0;
+var ball1 = document.getElementById('ball1');
+var Xreverse1 = false;
+var Yreverse1 = false;
+var Xmin1 = 0;
+var Xmax1 = window.innerWidth;
+var Ymax1 = 690;
+var Ymin1 = 0;
+
+setInterval( 
+function moveBall1(){
+
+    if(Xreverse1){
+    positionX1 = positionX1 - velocityX1;
+    ball1.style.left = positionX1 + "px";
+    
+  } else {
+    positionX1 = positionX1 + velocityX1;
+    ball1.style.left = positionX1 + "px";
+  }
+  if(Yreverse1){
+    positionY1 = positionY1 - velocityY1;
+    ball1.style.top = positionY1 + "px";
+  }else{
+    positionY1 = positionY1 + velocityY1;
+    ball1.style.top = positionY1 + "px";
+  }
+  if(
+    positionX1 > Xmax1 ||
+    positionX1 < Xmin1
+  ){
+    Xreverse1 = !Xreverse1;
+  }
+
+  if(
+    positionY1 > Ymax1 ||
+    positionY1 < Ymin1
+  ){
+    Yreverse1 = !Yreverse1
+  }
+
+  
+},5)
+</script>
+
+<div id="ball" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width: 50px;
+  height:50px;
+  border-radius:100%;
+  background:#7bfc94"></div>
+
+<script>
+
+var velocityX = 0;
+var velocityY = 10;
+var positionX = 0;
+var positionY = 690;
+var ball = document.getElementById('ball');
+var Xreverse = false;
+var Yreverse = false;
+var Xmin = 0;
+var Xmax = 1475;
+var Ymax = 690;
+var Ymin = 0;
+
+setInterval( 
+function moveBall(){
+
+    if(Xreverse){
+    positionX = positionX - velocityX;
+    ball.style.left = positionX + "px";
+    
+  } else {
+    positionX = positionX + velocityX;
+    ball.style.left = positionX + "px";
+  }
+  if(Yreverse){
+    positionY = positionY - velocityY;
+    ball.style.top = positionY + "px";
+  }else{
+    positionY = positionY + velocityY;
+    ball.style.top = positionY + "px";
+  }
+  if(
+    positionX > Xmax ||
+    positionX < Xmin
+  ){
+    Xreverse = !Xreverse;
+  }
+
+  if(
+    positionY > Ymax ||
+    positionY < Ymin
+  ){
+    Yreverse = !Yreverse
+  }
+
+  
+},5)
+
+
+</script>
+
+<div id="ball2" style="
+z-index:5;
+position:absolute;
+left: 0px;
+top: 0px;
+width: 100px;
+height:50px;
+border-radius:50%;
+background:red"></div>
+
+<script>
+var velocityX2 = 10;
+var velocityY2 = 0;
+var positionX2 = 0;
+var positionY2 = 400;
+var ball2 = document.getElementById('ball2');
+var Xreverse2 = false;
+var Yreverse2 = false;
+var Xmin2 = 0;
+var Xmax2 = 1475;
+var Ymax2 = 690;
+var Ymin2 = 0;
+
+setInterval( 
+function moveBall2(){
+
+    if(Xreverse2){
+    positionX2 = positionX2 - velocityX2;
+    ball2.style.left = positionX2 + "px";
+    
+  } else {
+    positionX2 = positionX2 + velocityX2;
+    ball2.style.left = positionX2 + "px";
+  }
+  if(Yreverse2){
+    positionY2 = positionY2 - velocityY2;
+    ball2.style.top = positionY2 + "px";
+  }else{
+    positionY2 = positionY2 + velocityY2;
+    ball2.style.top = positionY2 + "px";
+  }
+  if(
+    positionX2 > Xmax2 ||
+    positionX2 < Xmin2
+  ){
+    Xreverse2 = !Xreverse2;
+  }
+
+  if(
+    positionY2 > Ymax2 ||
+    positionY2 < Ymin2
+  ){
+    Yreverse2 = !Yreverse2
+  }
+
+  
+},5)
+</script>
+
+<div id="ball3" style="
+z-index:5;
+position:absolute;
+left: 0px;
+top: 0px;
+width: 100px;
+height:50px;
+border-radius:0%;
+background:cyan"></div>
+
+<script>
+var velocityX3 = 10;
+var velocityY3 = 0;
+var positionX3 = 1475;
+var positionY3 = 0200;
+var ball3 = document.getElementById('ball3');
+var Xreverse3 = false;
+var Yreverse3 = false;
+var Xmin3 = 0;
+var Xmax3 = 1475;
+var Ymax3 = 690;
+var Ymin3 = 0;
+
+setInterval( 
+function moveBall3(){
+
+    if(Xreverse3){
+    positionX3 = positionX3 - velocityX3;
+    ball3.style.left = positionX3 + "px";
+    
+  } else {
+    positionX3 = positionX3 + velocityX3;
+    ball3.style.left = positionX3 + "px";
+  }
+  if(Yreverse3){
+    positionY3 = positionY3 - velocityY3;
+    ball3.style.top = positionY3 + "px";
+  }else{
+    positionY3 = positionY3 + velocityY3;
+    ball3.style.top = positionY3 + "px";
+  }
+  if(
+    positionX3 > Xmax3 ||
+    positionX3 < Xmin3
+  ){
+    Xreverse3 = !Xreverse3;
+  }
+
+  if(
+    positionY3 > Ymax3 ||
+    positionY3 < Ymin3
+  ){
+    Yreverse3 = !Yreverse3
+  }
+
+  
+},5)
+</script>
+
+<div id="ball4" style="
+z-index:5;
+position:absolute;
+left: 0px;
+top: 0px;
+width: 50px;
+height:50px;
+border-radius:0%;
+background:orange"></div>
+
+<script>
+var velocityX4 = 10;
+var velocityY4 = 5;
+var positionX4 = 0;
+var positionY4 = 0;
+var ball4 = document.getElementById('ball4');
+var Xreverse4 = false;
+var Yreverse4 = false;
+var Xmin4 = 0;
+var Xmax4 = 1475;
+var Ymax4 = 690;
+var Ymin4 = 0;
+
+setInterval( 
+function moveBall4(){
+
+    if(Xreverse4){
+    positionX4 = positionX4 - velocityX4;
+    ball4.style.left = positionX4 + "px";
+    
+  } else {
+    positionX4 = positionX4 + velocityX4;
+    ball4.style.left = positionX4 + "px";
+  }
+  if(Yreverse4){
+    positionY4 = positionY4 - velocityY4;
+    ball4.style.top = positionY4 + "px";
+  }else{
+    positionY4 = positionY4 + velocityY4;
+    ball4.style.top = positionY4 + "px";
+  }
+  if(
+    positionX4 > Xmax4 ||
+    positionX4 < Xmin4
+  ){
+    Xreverse4 = !Xreverse4;
+  }
+
+  if(
+    positionY4 > Ymax4 ||
+    positionY4 < Ymin4
+  ){
+    Yreverse4 = !Yreverse4
+  }
+
+  
+},5)
+</script>
